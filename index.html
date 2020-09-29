@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishop</title>
+    <link href="estillos.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Apple.png" alt="Apple" class="logo"> 
+    </nav> 
+    <div class="catalogo">
+        <article>
+            
+            <img src="https://shopincdn.ovh/costomovil/cache/images/_product_catalogue_/2/2/1/5/565x565_q91_cr0_fix1/84-apple-iphone-8-256gb-gold.jpg" alt="Iphone 8" class="imagen_telefono">
+            <h3>iPhone 8</h3> 
+            <p>Con un nuevo diseño de cristal y aluminio, pantallas Retina HD, chip A11 Bionic, nuevas cámaras individual y doble con función de Iluminación de Retratos, carga inalámbrica y optimizados para la realidad aumentada</p>
+        </article>
+        <article>
+            
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61HHOHgYb1L._AC_SL1500_.jpg" alt="Iphone 10" class="imagen_telefono">
+            <h3>iPhone X</h3> 
+            <p> Es el móvil de gama top de Apple de 2017 y llega al mercado con una pantalla OLED panorámica con notch y un peso de 174 g. Tiene un diseño compacto con grosor de 7,7 mm con cuerpo unibody metálico y trasera de cristal. El Apple iPhone X monta una pantalla de 5,8 pulgadas con resolución 2.436x1.125px.</p>
+        </article> 
+        <article>
+             
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51kuxLr0BUL._AC_SX569_.jpg" alt="Iphone 10 MAX" class="imagen_telefono">
+            <h3>iPhone XS Max</h3>
+            <p>Trabaja sobre el procesador Apple A12 Bionic y 3 GB de memoria RAM. Es un procesador muy potente con una GPU personalizada de Apple que rinde notablemente más que el iPhone X del año pasado. En cuanto a almacenamiento, el iPhone XS parte de 64 GB y es almacenamiento no ampliable.</p>
+        </article>
+        <article>
+            
+            <img src="https://cdn.shopify.com/s/files/1/0101/2522/products/Captura_de_Pantalla_2019-10-24_a_la_s_18.11.17_45599abb-79c6-4fc5-b801-a01fc50701b8.png?v=1572012165" alt="Iphone 11" class="imagen_telefono">
+            <h3>iPhone 11</h3> 
+            <p>Es un buen sucesor del iPhone XR. Aunque presenta la misma pantalla y diseño de su antecesor, ofrece dos cámaras traseras y nuevas funciones junto con un precio de entrada más bajo.</p>
+        </article>
+    </div>
+    <div class="likes">
+        <span id="contador_dislike">0</span>
+        <button onclick="dislike()"><img src="data:image/png;base64,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" alt="No me gusta"></button>
+        <span id="contador">0</span>
+        <button onclick="like()"><img src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-vector-like-icon-png-image_695362.jpg" alt="Me gusta"></button>
+    </div>
+    <footer>
+        <p>Mishell Figueroa</p>
+    </footer>
+
+</body>
+</html>
